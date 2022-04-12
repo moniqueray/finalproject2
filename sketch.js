@@ -58,8 +58,8 @@ function setup() {
   playerAvatar.setMaxSpeed(20);
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
-  playerAvatar.addMovingAnimation( 'assets/blueblob-01.png', 'assets/blueblob-05.png');
-  playerAvatar.addStandingAnimation('assets/blueblob-01.png', 'assets/blueblob-05.png');
+  playerAvatar.addMovingAnimation( 'assets/girlavatar01.png', 'assets/girlavatar02.png');
+  playerAvatar.addStandingAnimation('assets/girlavatar01.png', 'assets/girlavatar02.png');
 
   //--- TEMPLATE STUFF: Don't change
   // use this to track movement from toom to room in adventureManager.draw()
