@@ -1,6 +1,5 @@
 CurrentState,ClickableName,MapDirection,NextState
-Splash,,,Instructions
-Instructions,StartGame,,Start
+Introduction,StartGame,E,Start
 Start,,N,Calm
 Start,,S,Surprised
 Start,,W,Mad

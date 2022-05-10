@@ -1,8 +1,11 @@
 /***********************************************************************************
-  MoodyMaze
-  by Scott Kildall
+  Social Media Brain Melt
+  by Monique Ray
 
   Uses the p5.2DAdventure.js class 
+
+  Overview:
+  Social Media Brain Melt is an interactive game that enables users to... 
   
 ------------------------------------------------------------------------------------
 	To use:
@@ -18,6 +21,12 @@ var adventureManager;
 
 // p5.play
 var playerAvatar;
+//added in
+var Mitski;
+var Rey;
+var trashnewsletters;
+var socialmedia;
+
 
 // Clickables: the manager class
 var clickablesManager;    // the manager class
@@ -34,7 +43,8 @@ const A_KEY = 65;
 //-- MODIFY THIS for different speeds
 var speed = 10;
 
-//--- Your globals would go here
+//array to count grabbables
+const collectedGame = 0;
 
 
 // Allocate Adventure Manager with states table and interaction tables
@@ -42,6 +52,12 @@ function preload() {
   //--- TEMPLATE STUFF: Don't change
   clickablesManager = new ClickableManager('data/clickableLayout.csv');
   adventureManager = new AdventureManager('data/adventureStates.csv', 'data/interactionTable.csv', 'data/clickableLayout.csv');
+
+  //spriteMitskistand = loadanimation()
+  //spriteMitskiwalk = loadanimation()
+  
+  //newsletterAnimation =
+  //postAnimation = 
   //---
 }
 
@@ -58,11 +74,12 @@ function setup() {
   playerAvatar = new Avatar("Player", 640, 400);
    
   // MODIFY THIS: to make your avatar go faster or slower
-  playerAvatar.setMaxSpeed(20);
+  playerAvatar.setMaxSpeed(10);
+  frameRate(24);
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
-  playerAvatar.addMovingAnimation( 'assets/blueblob-01.png', 'assets/blueblob-05.png');
-  playerAvatar.addStandingAnimation('assets/blueblob-01.png', 'assets/blueblob-05.png');
+  playerAvatar.addMovingAnimation( 'assets/grabnews-01.png', 'assets/grabnews-03.png');
+  playerAvatar.addStandingAnimation('assets/butterfly-01.png', 'assets/butterfly-02.png');
 
   //--- TEMPLATE STUFF: Don't change
   // use this to track movement from toom to room in adventureManager.draw()
