@@ -1,6 +1,6 @@
 CurrentState,ClickableName,MapDirection,NextState
-Introduction,StartGame,E,Start
-Start,,N,Calm
+Introduction,StartGame,E,Firsthouse
+Firsthouse,,N,Start
 Start,,S,Surprised
 Start,,W,Mad
 Start,,E,Unlucky

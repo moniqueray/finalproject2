@@ -74,12 +74,12 @@ function setup() {
   playerAvatar = new Avatar("Player", 640, 400);
    
   // MODIFY THIS: to make your avatar go faster or slower
-  playerAvatar.setMaxSpeed(10);
+  playerAvatar.setMaxSpeed(20);
   frameRate(24);
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
   playerAvatar.addMovingAnimation( 'assets/grabnews-01.png', 'assets/grabnews-03.png');
-  playerAvatar.addStandingAnimation('assets/butterfly-01.png', 'assets/butterfly-02.png');
+  playerAvatar.addStandingAnimation('assets/grabnews-01.png', 'assets/grabnews-03.png');
 
   //--- TEMPLATE STUFF: Don't change
   // use this to track movement from toom to room in adventureManager.draw()
